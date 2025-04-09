@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blizzard - Battle.net</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="res/battlenet-logo.png">
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="row">
+            <div class="col-12 position-fixed z-3">
+                <nav class="navbar navbar-expand-lg rounded-2 bg-dark m-3" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html"><img height="50px" src="res/blizzard-logo.png" alt="logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#ana-menu" aria-controls="navbarSupportedContent" aria-expanded="false"aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="ana-menu">
+                            <!--Warcraft Menü-->
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Warcraft</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">World of Warcraft</a></li>
+                                        <li><a class="dropdown-item" href="#">World of Warcraft: The War Within</a></li>
+                                        <li><a class="dropdown-item" href="#">Warcraft I: Remastered</a></li>
+                                        <li><a class="dropdown-item" href="#">Warcraft II: Remastered</a></li>
+                                    </ul>
+                                </li>
+                                <!--Diablo Menü-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Diablo</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Diablo IV</a></li>
+                                        <li><a class="dropdown-item" href="#">Diablo Immortal</a></li>
+                                    </ul>
+                                </li>
+                                <!--Overwatch Menü-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Diablo</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Overwatch II</a></li>
+                                    </ul>
+                                </li>
+                                <!--StarCraft Menü-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">StarCraft</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">StarCraft II</a></li>
+                                        <li><a class="dropdown-item" href="#">StarCraft: Remastered</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!--üst sağ menü-->
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-color" href="#" role="button" data-bs-toggle="dropdown"aria-expanded="false">Hakkımızda</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Blizzard Hakkında</a></li>
+                                        <li><a class="dropdown-item" href="#">Haberler</a></li>
+                                        <li><a class="dropdown-item" href="#">BlizzCon</a></li>
+                                        <li><a class="dropdown-item" href="#">Kariyer</a></li>
+                                        <li><a class="dropdown-item" href="#">Ürünler</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-color" href="#">Mağaza</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-color" href="#"  data-bs-toggle="modal" data-bs-target="#user-modal"><i class="bi bi-person-fill"></i> Hesap</a>
+                                </li>
+                            </ul>
+                            <!--Battle.net'i İndir-->
+                            <button type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#game-modal"><img src="res/battlenet-logo.png" width="30px"alt=""> Battle.net</button>
+                            <button type="button" class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPanel"><i class="bi bi-sliders2"></i></button>
+                        </div>
+                        
+                       
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 p-0">
+                <div id="slider" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="res/slider/WoW_ClassicMOPBundle_Blizzardcom_HeaderDesktop_1600x720 (1).webp" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="res/slider/HS_31p6_ITED_MegaBundle_PP_Blizzardcom_Desktop_1600x720_RN01.webp" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="res/slider/WAR_SXSW_Thor-Announce_Blizzardcom_Desktop_1600x720_JL01a.webp" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+    </main>
+    
+    <footer></footer>
+
+    <!--Battle.net-->
+    <div class="modal fade text-color" tabindex="-1" id="game-modal" data-bs-theme="dark">
+        <div class="modal-dialog  modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Game Download Center</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row mb-2 align-items-center">
+                  <div class="col-md-3">
+                    <img src="res/img/blizzard_game_card_background_MOP.jpg" class="img-fluid w-100"  alt="fds">
+                  </div>
+                  <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perspiciatis labore, magnam laudantium nihil asperiores totam exercitationem, quas iusto tempora consectetur earum sequi ex similique mollitia cum eius sunt nisi?</div>
+                  <div class="col-md-3">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-md-3">
+                    <img src="res/card/blizzard_game_card_background_w2r.jpg" class="img-fluid w-100"  alt="fds">
+                  </div>
+                  <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perspiciatis labore, magnam laudantium nihil asperiores totam exercitationem, quas iusto tempora consectetur earum sequi ex similique mollitia cum eius sunt nisi?</div>
+                  <div class="col-md-3">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-md-3">
+                    <img src="res/card/blizzard_game_card_background_w3r_locale.jpg" class="img-fluid w-100"  alt="fds">
+                  </div>
+                  <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perspiciatis labore, magnam laudantium nihil asperiores totam exercitationem, quas iusto tempora consectetur earum sequi ex similique mollitia cum eius sunt nisi?</div>
+                  <div class="col-md-3">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-md-3">
+                    <img src="res/card/blizzard_game_card_background_wr.jpg" class="img-fluid w-100"  alt="fds">
+                  </div>
+                  <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perspiciatis labore, magnam laudantium nihil asperiores totam exercitationem, quas iusto tempora consectetur earum sequi ex similique mollitia cum eius sunt nisi?</div>
+                  <div class="col-md-3">
+                    <a href="#" class="btn btn-primary">Download</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--Hesap-->
+    <div class="modal fade text-color" tabindex="-1" id="user-modal" data-bs-theme="dark">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Sign in</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasPanel" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
