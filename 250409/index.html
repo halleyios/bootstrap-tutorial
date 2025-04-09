@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pelit Pastaneleri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="sabitler.css">
+    <link rel="stylesheet" href="tasarim.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="res/pelit-logo-2-min.png">
+  </head>
+  <body>
+    
+    <!-- üst kısım -->
+     <header>
+        <!-- 1.üst satır -->
+         <div class="bg-secondary">
+          <div class="container">
+            <div class="row">
+              <!-- dil menü -->
+              <div class="col-12 d-flex">
+                <ul class="nav" id="language-menu">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">TR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">EN</a>
+                  </li>
+                </ul>
+
+                <!-- sosyal medya menü -->
+                <ul class="nav" id="social-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-pinterest"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-twitter-x"></i></i></a>
+                  </li>
+                </ul>
+
+                <!-- arama kısmı -->
+                <form id="search-menu" class="d-flex ms-auto" role="search">
+                  <input class="form-control rounded-0 bg-primary border-0 text-light" type="search" placeholder="Ürün Arayın.." aria-label="search">
+                  <button class="btn bg-primary text-light rounded-0" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+         </div>
+
+         <!-- 2.üst satır -->
+         <div>
+         <div class="container">
+          <div class="row justify-content-center py-3">
+            <div class="col-4 col-md-2">
+              <a href="index.html"><img src="res/pelit-logo-2.png" alt="logo" class="img-fluid"></a>
+            </div>
+          </div>
+         </div>
+        </div>
+
+         <!-- 3.üst satır -->
+         <div class="bg-primary">
+              <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                      <nav id="main-menu" class="navbar navbar-expand-lg" data-bs-theme="dark">
+                        <div class="container-fluid">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Yeni Gelenler</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Ürünler
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link">Çikolata Müzesi</a>
+                                </li>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">Hediye Önerileri</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">İletişim</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">Hakkmızda</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                </div>
+              </div>
+         </div>
+     </header>
+
+     <!-- orta kısım -->
+      <main>
+        <!-- 1.orta satır -->
+        <div id="pelitSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="res/chocolatespecial.jpg" class="d-block w-100" alt="çikolatalı pasta">
+            </div>
+            <div class="carousel-item">
+              <img src="res/selaletr.jpg" class="d-block w-100" alt="şelale pasta">
+            </div>
+            <div class="carousel-item">
+              <img src="res/portakallicileklitr.jpg" class="d-block w-100" alt="meyveli pasta">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#pelitSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Geri</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#pelitSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidd en">İleri</span>
+          </button>
+        </div>
+
+         <!-- 2.orta satır -->
+          <div class="container" id="bolum1">
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="card p-4 text-center">
+                    <div class="card-body rounded-3">
+                      <h5 class="card-title">Şubeler</h5>
+                      <p class="card-text">Kolayca ulaşabileceğiniz şubelerimiz ve detaylar</p>
+                      <a href="#" class="card-link">tıklayınız</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card p-4 text-center">
+                    <div class="card-body rounded-3">
+                      <h5 class="card-title">Organizasyon</h5>
+                      <p class="card-text">Organizasyonlarınızı Pelit ile unutulmaz kılmaz bir tık uzağınızda</p>
+                      <a href="#" class="card-link">tıklayınız</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card p-4 text-center">
+                    <div class="card-body rounded-3">
+                      <h5 class="card-title">Kataloglarımız</h5>
+                      <p class="card-text">Sezonun en özel ürünleri için Pelit katalogları inceleyin</p>
+                      <a href="#" class="card-link">tıklayınız</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </main>
+
+      <!-- alt kısım -->
+       <footer class="bg-primary">
+        
+        <!-- 1.alt satır -->
+        <div class="container mt-4 py-3">
+          <div class="row justify-content-center">
+            <div class="col-md-2">
+              <a href="index.html"><img src="res/logo-bottom-min.png" alt="logo" class="img-fluid"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- yatay çizgi -->
+        <div class="container">
+          <div class="yatay-cizgi"></div>
+        </div>
+
+        <!-- 2.alt satır -->
+        <div class="container">
+          <div class="row">
+              <div class="col-12">
+                <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Hakkımızda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Aydınlatma Metni</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Pelit Pastacılık</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+
+        <!-- 3.alt satır -->
+        <div class="bg-secondary">
+          <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-light pt-2 text-center">Pelit yıllardır sizinle...</div>
+            <div class="col-md-4 text-light pt-2 text-center">Pelit 2020 &copy; Tüm hakları saklıdır.</div>
+            <div class="col-md-4">
+              <ul class="nav" id="alt-social-menu">
+                <li class="nav-item text-center">
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-pinterest"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-twitter-x"></i></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+
+       </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>

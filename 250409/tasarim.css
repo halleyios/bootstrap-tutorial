@@ -1,0 +1,38 @@
+#language-menu{
+    border-right: solid 1px #fff;
+}
+
+#language-menu a, #social-menu a,#alt-social-menu a{
+    color: var(--bs-white);
+}
+
+#language-menu a:hover,#social-menu a:hover{
+    color: var(--bs-dark);
+}
+
+
+input[type="search"]::placeholder{
+    color: var(--bs-secondary);
+}
+
+input[type="search"]:focus{
+    box-shadow: none;
+}
+
+#bolum1 .card{
+    background-color: var(--bs-secondary-border-subtle);
+}
+
+#bolum1 .card-body{
+    border: 2px solid var(--bs-white);
+}
+
+#bolum1{
+    position: relative;
+    z-index: 100;
+    margin-top: -40px;
+}
+
+.yatay-cizgi{
+    border-bottom: solid 1px white;
+}
