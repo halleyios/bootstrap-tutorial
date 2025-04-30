@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örnek Çalışma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body data-bs-theme="dark">
+    <div class="container">
+        <form action="kayit.html" method="post" class="row mt-3 was-validated">
+            <div class="col-12 form-floating">
+                <input type="email" name="kposta" id="kposta" class="form-control"  placeholder="ornek@gmail.com" required>
+                <label for="kposta" class="form-label">E-Posta</label>
+                <div class="invalid-feedback">Geçersiz e-posta girdiniz, örn: eposta@gmail.com</div>
+                <div class="valid-feedback">Geçerli e-posta!</div>
+            </div>
+
+            <div class="col-12 form-floating mt-3">
+                <input type="text" name="ad" id="ad" class="form-control"  placeholder="hilal">
+                <label for="ad" class="form-label">Adınız</label>
+            </div>
+
+            <div class="col-12 mt-3">
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="secim1" name="secim1">
+                    <label class="form-check-label" for="secim1">
+                      Pastalar
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="secim2" name="secim2">
+                    <label class="form-check-label" for="secim2">
+                      İçecekler
+                    </label>
+                  </div>
+            </div>
+
+            <div class="col-12 mt-3">
+                <p>Dondurma Çeşitleri</p>   
+                <input type="checkbox" class="btn-check" id="dondurma1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="dondurma1">Karamel</label>
+
+                <input type="checkbox" class="btn-check" id="dondurma2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="dondurma2">Çilek</label>
+
+                <input type="checkbox" class="btn-check" id="dondurma3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="dondurma3">Vanilya</label>
+            </div>
+
+            <div class="col-12 mt-3">
+                <label for="ttur">Talep türü seçiniz</label>
+                <select name="ttur" id="ttur" class="form-select">
+                    <option value="1">Şikayet</option>
+                    <option value="2">Öneri</option>
+                    <option value="3">Teşekkür</option>
+                </select>
+                
+            </div>
+
+            <div class="col-12 mt-3">
+                <label for="dusunce" class="form-label">Düşünce</label>
+                <textarea name="dusunce" id="dusunce" class="form-control" rows="5"></textarea>
+            </div>
+
+            <div class="col-12 mt-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="" id="odeme1" name="odeme" required>
+                    <label class="form-check-label" for="odeme1">
+                      Kart
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="" id="odeme2" name="odeme" required>
+                    <label class="form-check-label" for="odeme2">
+                      Nakit
+                    </label><div class="invalid-feedback">Ödeme türü seçin</div>
+                </div>
+            </div>
+
+
+            <div class="col-12 mt-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" value="670">
+                    <span class="input-group-text">₺</span>
+                  </div>
+            </div>
+
+            <div class="col-12 mt-3">
+                <button type="submit" class="btn btn-success">Kaydet</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
