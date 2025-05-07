@@ -1,1 +1,0 @@
-let soyad = "De Souza"
